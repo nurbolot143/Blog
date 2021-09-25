@@ -1,0 +1,11 @@
+@import "../vars";
+
+.post {
+  &__inner {
+    display: flex;
+  }
+
+  &__img {
+    padding: 10px;
+  }
+}
