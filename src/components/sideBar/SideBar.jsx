@@ -1,6 +1,9 @@
 import React from "react";
+import GitHubIcon from "@mui/icons-material/GitHub";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import InstagramIcon from "@mui/icons-material/Instagram";
 
-function SideBar() {
+function sideBar() {
   return (
     <aside className="sideBar">
       <div className="sideBar__item">
@@ -19,8 +22,43 @@ function SideBar() {
           debitis iste qui. Itaque omnis quo repudiandae? Sed, nisi.
         </p>
       </div>
+      <div className="sideBar__item">
+        <h4 className="sideBar__item-title">Categories</h4>
+        <ul className="sideBar__categories">
+          <li className="sideBar__categories-item">Technology</li>
+          <li className="sideBar__categories-item">Coding</li>
+          <li className="sideBar__categories-item">Livestyle</li>
+          <li className="sideBar__categories-item">Music</li>
+          <li className="sideBar__categories-item">Travel</li>
+          <li className="sideBar__categories-item">Health</li>
+        </ul>
+      </div>
+      <div className="sideBar__item">
+        <h4 className="sideBar__item-title">Follow Me</h4>
+        <ul className="sideBar__socials">
+          <li className="sideBar__socials-item">
+            <a
+              href="https://github.com/zhanybekovych"
+              target="_blank"
+              rel="noreferrer"
+            >
+              <GitHubIcon />
+            </a>
+          </li>
+          <li className="sideBar__socials-item">
+            <a href="https://fb.com" target="_blank" rel="noreferrer">
+              <FacebookIcon />
+            </a>
+          </li>
+          <li className="sideBar__socials-item">
+            <a href="https://fb.com" target="_blank" rel="noreferrer">
+              <InstagramIcon />
+            </a>
+          </li>
+        </ul>
+      </div>
     </aside>
   );
 }
 
-export default SideBar;
+export default sideBar;

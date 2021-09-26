@@ -3,13 +3,17 @@ import { Banner, Posts, SideBar } from "../../components";
 
 function Home() {
   return (
-    <div className="home">
+    <>
       <Banner />
-      <div className="container home__inner">
-        <Posts />
-        <SideBar />
+      <div className="home">
+        <div className="container">
+          <div className="home__inner">
+            <Posts />
+            <SideBar />
+          </div>
+        </div>
       </div>
-    </div>
+    </>
   );
 }
 
