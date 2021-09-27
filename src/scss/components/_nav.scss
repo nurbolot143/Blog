@@ -1,6 +1,9 @@
 @import "../vars";
 
 .nav {
+  background: $accent-color;
+  color: $light;
+
   &__inner {
     display: flex;
     align-items: center;
@@ -20,7 +23,7 @@
   }
 
   &__logo {
-    color: $main-color;
+    color: $light;
     text-decoration: none;
     font-size: 25px;
     text-transform: uppercase;

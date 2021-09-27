@@ -1,11 +1,28 @@
 @import "../vars";
 
 .sideBar {
+  position: relative;
   align-self: flex-start;
   width: 390px;
+  color: $light;
   padding: 20px;
-  background-color: lighten($main-color, 80%);
+  background: url("../../assets/images/goryjpg.jpg") no-repeat;
+  background-position: center;
+  background-size: cover;
+  // background-color: lighten($main-color, 80%);
   border-radius: 10px;
+  z-index: 2;
+
+  &::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    content: "";
+    background: transparentize($accent-color, 0.15);
+    z-index: -1;
+  }
 
   &__item {
     display: flex;
