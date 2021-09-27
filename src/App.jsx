@@ -1,5 +1,5 @@
 import { Nav } from "./components";
-import { Home, Single } from "./pages";
+import { Home, Single, Write } from "./pages";
 import "./scss/index.scss";
 
 function App() {
@@ -7,7 +7,8 @@ function App() {
     <>
       <Nav />
       {/* <Home /> */}
-      <Single />
+      {/* <Single /> */}
+      <Write />
     </>
   );
 }
