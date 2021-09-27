@@ -1,4 +1,5 @@
 import React from "react";
+import AccountCircleIcon from "@mui/icons-material/AccountCircle";
 
 function Nav() {
   return (
@@ -20,11 +21,7 @@ function Nav() {
             </ul>
           </div>
           <div className="nav__right">
-            <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLe5PABjXc17cjIMOibECLM7ppDwMmiDg6Dw&usqp=CAU"
-              alt="user"
-              className="nav__user"
-            />
+            <AccountCircleIcon className="nav__user" style={{ fontSize: 40 }} />
           </div>
         </div>
       </div>

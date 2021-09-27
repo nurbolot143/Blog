@@ -5,7 +5,7 @@ function Header() {
     <div className="banner">
       <div className="banner__content">
         <h2>Blogger classic desing</h2>
-        <p>Welcome to my blog</p>
+        <p>Welcome to our blog</p>
       </div>
     </div>
   );

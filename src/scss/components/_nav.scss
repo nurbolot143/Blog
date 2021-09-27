@@ -45,16 +45,15 @@
       transition: all 0.2s;
 
       &:hover {
-        background-color: lighten($main-color, 60%);
-        color: $light;
+        // background-color: lighten($main-color, 60%);
+        // color: $light;
+        background: $light;
+        color: $accent-color;
       }
     }
   }
 
   &__user {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
+    font-size: 40px;
   }
 }
