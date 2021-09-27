@@ -19,7 +19,7 @@
     left: 0;
     top: 0;
     content: "";
-    background: transparentize($color: $accent-color, $amount: 0.2);
+    background: transparentize($color: $main-color, $amount: 0.2);
     z-index: -1;
   }
 
