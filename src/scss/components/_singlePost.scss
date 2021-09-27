@@ -16,6 +16,11 @@
     align-items: center;
   }
 
+  &__title {
+    text-transform: uppercase;
+    font-size: 17px;
+  }
+
   &__btn {
     border: none;
     background: transparent;
@@ -24,6 +29,13 @@
     color: $main-color;
     &:last-child {
       margin: 0;
+    }
+  }
+
+  &__content {
+    p {
+      font-size: 17px;
+      line-height: 1.5;
     }
   }
 }
