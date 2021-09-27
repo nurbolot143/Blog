@@ -10,20 +10,12 @@
 
   &__categories {
     position: relative;
-    padding-left: 20px;
     padding-right: 20px;
+  }
 
-    &::before {
-      position: absolute;
-      left: 0;
-      top: 2px;
-      width: 15px;
-      height: 15px;
-      background: url("../../assets/images/icon-folder.svg") no-repeat;
-      background-position: center;
-      background-size: contain;
-      content: "";
-    }
+  &__wrapper {
+    display: flex;
+    align-items: flex-end;
   }
 
   &__category {
@@ -33,42 +25,20 @@
   }
 
   &__author {
-    position: relative;
-    padding-left: 20px;
     padding-right: 20px;
     font-size: 14px;
     color: lighten($color: $main-color, $amount: 30%);
-
-    &::before {
-      position: absolute;
-      left: 0;
-      top: 1px;
-      width: 13px;
-      height: 13px;
-      background: url("../../assets/images/icon-user.svg") no-repeat;
-      background-position: center;
-      background-size: contain;
-      content: "";
-    }
   }
 
   &__date {
-    position: relative;
     margin-top: 2px;
-    padding-left: 20px;
     font-size: 14px;
     line-height: 19px;
     color: lighten($color: $main-color, $amount: 30%);
+  }
 
-    &::before {
-      position: absolute;
-      left: 0;
-      width: 15px;
-      height: 15px;
-      background: url("../../assets/images/icon-calendar.svg") no-repeat;
-      background-position: center;
-      background-size: contain;
-      content: "";
-    }
+  &__icon {
+    margin-right: 5px;
+    color: $main-color;
   }
 }
