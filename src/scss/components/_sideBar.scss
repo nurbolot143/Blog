@@ -33,8 +33,6 @@
       align-self: stretch;
       margin: 0 0 20px;
       padding: 15px 0;
-      // border-top: 1px dashed $main-color;
-      // border-bottom: 1px dashed $main-color;
       text-align: center;
       text-transform: uppercase;
       letter-spacing: 0.1em;
@@ -95,7 +93,7 @@
         font-size: 2rem;
 
         &:hover {
-          color: lighten($main-color, 20%);
+          color: lighten($accent-color, 20%);
         }
       }
     }

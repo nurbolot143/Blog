@@ -45,10 +45,8 @@
       transition: all 0.2s;
 
       &:hover {
-        // background-color: lighten($main-color, 60%);
-        // color: $light;
         background: $light;
-        color: $accent-color;
+        color: $main-color;
       }
     }
   }
