@@ -48,6 +48,11 @@
         background: $light;
         color: $main-color;
       }
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
     }
   }
 

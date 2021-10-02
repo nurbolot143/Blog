@@ -12,8 +12,10 @@
   }
 
   &__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     position: relative;
-    text-align: center;
     width: 380px;
     margin: 0 auto;
     padding: 40px 20px;
@@ -33,6 +35,7 @@
   }
 
   &__form {
+    width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -57,16 +60,20 @@
         border-color: $main-color;
       }
     }
+  }
 
-    &-btn {
-      margin-top: 40px;
-      text-transform: uppercase;
-      border: none;
-      background: $main-color;
-      padding: 10px 30px;
-      color: $light;
-      border-radius: 4px;
-      cursor: pointer;
-    }
+  &__btn {
+    margin-top: 40px;
+    text-transform: uppercase;
+    border: none;
+    background: $main-color;
+    padding: 10px 30px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 15px;
+    color: $light;
+    border-radius: 4px;
+    cursor: pointer;
   }
 }
