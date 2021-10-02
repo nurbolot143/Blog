@@ -6,9 +6,9 @@ function App() {
   return (
     <>
       <Nav />
-      {/* <Home /> */}
+      <Home />
       {/* <Single /> */}
-      <Write />
+      {/* <Write /> */}
     </>
   );
 }
