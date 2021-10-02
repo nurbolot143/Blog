@@ -1,15 +1,17 @@
 import { Nav } from "./components";
-import { Home, Register, Single, Write } from "./pages";
+import { Home, Login, Register, Settings, Single, Write } from "./pages";
 import "./scss/index.scss";
 
 function App() {
   return (
     <>
       <Nav />
-      <Home />
+      {/* <Home />
       <Single />
-      <Write />
+      <Write /> */}
       <Register />
+      <Login />
+      <Settings />
     </>
   );
 }
