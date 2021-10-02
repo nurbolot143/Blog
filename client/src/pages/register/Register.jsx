@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Register() {
   return (
@@ -39,11 +38,9 @@ function Register() {
               />
             </label>
 
-            <button className="register__btn">Register</button>
+            <button className="register__form-btn">Register</button>
           </form>
-          <Link to="/login" className="register__btn">
-            Login
-          </Link>
+          <button className="register__form-btn">Login</button>
         </div>
       </div>
     </div>

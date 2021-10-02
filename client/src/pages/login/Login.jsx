@@ -1,5 +1,4 @@
 import React from "react";
-import { Link } from "react-router-dom";
 
 function Login() {
   return (
@@ -29,11 +28,9 @@ function Login() {
               />
             </label>
 
-            <button className="login__btn">Login</button>
+            <button className="login__form-btn">Login</button>
           </form>
-          <Link to="register" className="login__btn">
-            Register
-          </Link>
+          <button className="login__form-btn">Register</button>
         </div>
       </div>
     </div>
