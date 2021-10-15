@@ -1,18 +1,40 @@
 const express = require("express");
 const dotenv = require("dotenv");
 const mongoose = require("mongoose");
-
-const app = express();
+const multer = require("multer");
+const authRoute = require("./routes/auth");
+const userRoute = require("./routes/user");
+const postRoute = require("./routes/posts");
 
 dotenv.config();
+const app = express();
+app.use(express.json());
 
 mongoose
   .connect(process.env.DB_URL, {
-    userNewUrlParser: true,
-    userUnifiedTopology: true,
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
   })
-  .then(console.log("connected DB"))
+  .then(console.log("Connected DB"))
   .catch((err) => console.log(err));
+
+const storage = multer.diskStorage({
+  destination: (req, file, cb) => {
+    cb(null, "images");
+  },
+  filename: (req, file, cb) => {
+    cb(null, "hello.jpeg"); //req.body.name
+  },
+});
+
+const upload = multer({ storage: storage });
+app.post("/api/upload", upload.single("file"), (req, res) => {
+  res.status(200).json("Image uploaded");
+});
+
+app.use("/api/auth", authRoute);
+app.use("/api/user", userRoute);
+app.use("/api/posts", postRoute);
 
 app.listen("5000", () => {
   console.log("server is running");
